@@ -1,0 +1,30 @@
+body {
+  font-family: var(--font-poppins);
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--color-black-alpha-80);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.page-wrapper {
+  position: relative;
+  height: 100dvh;
+}

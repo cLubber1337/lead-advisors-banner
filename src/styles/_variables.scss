@@ -1,0 +1,27 @@
+:root {
+  // fonts
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+
+
+  // colors
+  --color-black-alpha-80: hsla(0, 0%, 0%, 0.8);
+  --color-black-alpha-60: hsla(0, 0%, 0%, 0.6);
+  --color-blue-dark: hsl(220, 53%, 19%);
+  --color-blue-light: hsl(215, 54%, 22%);
+  --color-white-darker: hsl(0, 0%, 99%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-red: hsl(2, 85%, 46%);
+
+  // border
+  --border-radius: 40px;
+  --border-radius-full: 50%;
+
+  // transition
+  --transition-duration: 0.3s;
+
+  // container
+  --container-width: 320px;
+  --container-padding-x: 20px;
+}
+
