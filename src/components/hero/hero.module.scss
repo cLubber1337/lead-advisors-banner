@@ -1,0 +1,25 @@
+.hero {
+  margin-top: 66px;
+  margin-bottom: 40px;
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title {
+  color: var(--color-blue-light);
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 286px;
+}
