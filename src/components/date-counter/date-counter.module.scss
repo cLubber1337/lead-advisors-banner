@@ -1,0 +1,24 @@
+@import "@/styles/media";
+
+.dateCounter {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+
+  @include desktop {
+    column-gap: 0;
+  }
+}
+
+.dateSeparator {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--color-blue-dark);
+
+  @include desktop {
+    font-size: 4.5rem;
+    padding-right: 2px;
+  }
+}

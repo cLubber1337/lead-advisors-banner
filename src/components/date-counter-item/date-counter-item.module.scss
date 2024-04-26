@@ -1,0 +1,91 @@
+@import "@/styles/media";
+
+.dateCounterItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateValue {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--color-blue-dark);
+
+  @include desktop {
+    font-size: 4.5rem;
+  }
+}
+
+.dateLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 64px;
+  height: 40px;
+  background-image: url('@/assets/date-label-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    width: 132px;
+    height: 54px;
+    background-image: url('@/assets/date-label.svg');
+  }
+
+  &::before {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--color-white);
+
+    @include desktop {
+      font-size: 1rem;
+      text-transform: none;
+    }
+  }
+
+
+  &[data-date-label="dd"] {
+    &::before {
+      content: 'dd';
+
+      @include desktop {
+        content: 'Days';
+      }
+    }
+  }
+
+  &[data-date-label="hh"] {
+    &::before {
+      content: 'hh';
+
+      @include desktop {
+        content: 'Hours';
+      }
+    }
+  }
+
+  &[data-date-label="mm"] {
+    &::before {
+      content: 'mm';
+
+      @include desktop {
+        content: 'Minutes';
+      }
+    }
+  }
+
+  &[data-date-label="ss"] {
+    &::before {
+      content: 'ss';
+
+      @include desktop {
+        content: 'Seconds';
+      }
+    }
+  }
+
+}
+
+

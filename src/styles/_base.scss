@@ -1,3 +1,5 @@
+@import "./media";
+
 body {
   font-family: var(--font-poppins);
   line-height: 1.5;
@@ -22,6 +24,10 @@ a {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
+
+  @include desktop {
+    --container-width: 838px;
+  }
 }
 
 .page-wrapper {
