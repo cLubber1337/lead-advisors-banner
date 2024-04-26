@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  padding-top: 80px;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: center;
+}
+
+.logoLink {
+  position: relative;
+  z-index: var(--z-index-header-logo);
+}
+
+
+
+.cloud {
+  position: fixed;
+  z-index: var(--z-index-cloud);
+
+  &Left {
+    top: -155px;
+    left: -187px;
+    width: 366px;
+    height: 302px;
+  }
+
+  &Right {
+    right: -338px;
+    top: -427px;
+  }
+}

@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import Header from '@/components/header/Header.vue'
+</script>
 
 <template>
-  <h1 class="title">Hello Vue3</h1>
+  <div class="page-wrapper">
+    <Header />
+  </div>
 </template>
 
 <style scoped></style>
