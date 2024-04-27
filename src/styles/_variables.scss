@@ -16,6 +16,8 @@
   // border
   --border-radius: 40px;
   --border-radius-full: 50%;
+  --border-radius-modal: 2px;
+  --border-modal: 1px solid hsla(196, 73%, 27%, 0.07);
 
   // transition
   --transition-duration: 0.3s;
@@ -27,5 +29,9 @@
   // z-index
   --z-index-cloud: 100;
   --z-index-header-logo: 150;
+
+  //modal
+
+
 }
 

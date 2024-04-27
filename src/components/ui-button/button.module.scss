@@ -12,4 +12,27 @@
   border-radius: var(--border-radius);
   color: var(--color-white);
   font-size: 1.125rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: auto;
+    opacity: 0.5;
+  }
 }
+
+.clear {
+  @include reset-button;
+  padding: 0;
+  column-gap: normal;
+  border-radius: initial;
+  color: inherit;
+}
+

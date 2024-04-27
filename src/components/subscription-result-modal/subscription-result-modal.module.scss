@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 29px;
+  background-color: var(--color-white);
+  padding-inline: 20px;
+  padding-top: 97px;
+
+  border: var(--border-modal);
+  border-radius: var(--border-radius-modal);
+  max-width: 320px;
+  min-height: 370px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--color-blue-dark);
+}
+
+.description {
+  text-align: center;
+}
+
+.closeButton {
+  width: 100%;
+  max-width: 200px;
+  padding-inline: 12px;
+  justify-content: center;
+}
+
+.XButton {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  padding: 13px 16px;
+
+  &:hover {
+    background-color: hsla(198, 80%, 32%, 0.1);
+  }
+
+  svg {
+    fill: hsla(198, 80%, 32%, 0.5);
+  }
+}
+
+.error {
+  color: var(--color-red);
+}

@@ -5,12 +5,22 @@ defineProps({
   btnType: {
     type: String,
     default: 'button'
+  },
+  variant: {
+    type: String
+  },
+  disabled: {
+    type: Boolean
   }
 })
 </script>
 
 <template>
-  <button :class="styles.button" :type="btnType">
+  <button
+    :class="[styles.button, { [styles.clear]: variant === 'clear' }]"
+    :type="btnType"
+    :disabled
+  >
     <slot></slot>
   </button>
 </template>
