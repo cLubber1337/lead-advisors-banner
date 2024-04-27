@@ -1,0 +1,21 @@
+@import "@/styles/media";
+@import "@/styles/mixins";
+
+.textField{
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  color: var(--color-black-alpha-60);
+  width: 100%;
+  max-width: 100%;
+  font-size: 0.875rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+
+  @include screen-lg {
+    font-size: 1.125rem;
+    padding: 16px 27px;
+  }
+}

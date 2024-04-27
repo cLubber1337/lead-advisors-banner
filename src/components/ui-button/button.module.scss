@@ -3,6 +3,7 @@
 
 .button{
   @include reset-button;
+  cursor: pointer;
   display: flex;
   align-items: center;
   column-gap: 34px;

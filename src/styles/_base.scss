@@ -37,4 +37,10 @@ a {
 .page-wrapper {
   position: relative;
   height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }

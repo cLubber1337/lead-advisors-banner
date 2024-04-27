@@ -1,0 +1,63 @@
+@import "@/styles/media";
+
+.footer {
+  background-color: var(--color-blue-dark);
+}
+
+.footerInner{
+  padding-block: 50px;
+  display: flex;
+  justify-content: center;
+
+  @include screen-sm {
+    padding-block: 60px;
+  }
+
+  @include screen-lg {
+    padding-top: 60px;
+    padding-bottom: 72px;
+  }
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+
+  @include screen-sm {
+    max-width: 360px;
+  }
+
+  @include screen-lg {
+    max-width: 440px;
+  }
+}
+
+.formButton {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  padding: 0;
+  background-color: var(--color-red);
+  border-radius: var(--border-radius-full);
+  width: 33px;
+  height: 33px;
+  justify-content: center;
+
+  @include screen-lg {
+    right: 8px;
+    top: 8px;
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.formButtonIcon {
+  height: 16px;
+  width: 16px;
+
+  @include screen-lg {
+    height: 20px;
+    width: 20px;
+  }
+}
