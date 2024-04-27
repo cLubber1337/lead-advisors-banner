@@ -12,7 +12,7 @@
   line-height: 1;
   color: var(--color-blue-dark);
 
-  @include desktop {
+  @include screen-lg {
     font-size: 4.5rem;
   }
 }
@@ -28,7 +28,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @include desktop {
+  @include screen-lg {
     width: 132px;
     height: 54px;
     background-image: url('@/assets/date-label.svg');
@@ -39,7 +39,7 @@
     font-size: 0.75rem;
     color: var(--color-white);
 
-    @include desktop {
+    @include screen-lg {
       font-size: 1rem;
       text-transform: none;
     }
@@ -50,7 +50,7 @@
     &::before {
       content: 'dd';
 
-      @include desktop {
+      @include screen-lg {
         content: 'Days';
       }
     }
@@ -60,7 +60,7 @@
     &::before {
       content: 'hh';
 
-      @include desktop {
+      @include screen-lg {
         content: 'Hours';
       }
     }
@@ -70,7 +70,7 @@
     &::before {
       content: 'mm';
 
-      @include desktop {
+      @include screen-lg {
         content: 'Minutes';
       }
     }
@@ -80,7 +80,7 @@
     &::before {
       content: 'ss';
 
-      @include desktop {
+      @include screen-lg {
         content: 'Seconds';
       }
     }

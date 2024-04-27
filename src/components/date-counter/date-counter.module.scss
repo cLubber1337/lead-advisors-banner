@@ -1,12 +1,24 @@
 @import "@/styles/media";
 
+.dateCounterSection {
+  margin-bottom: 40px;
+
+  @include screen-lg {
+    margin-bottom: 60px;
+  }
+}
+
+
 .dateCounter {
-  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   column-gap: 4px;
 
-  @include desktop {
+  @include screen-sm{
+    column-gap: 12px;
+  }
+
+  @include screen-lg {
     column-gap: 0;
   }
 }
@@ -17,7 +29,7 @@
   line-height: 1;
   color: var(--color-blue-dark);
 
-  @include desktop {
+  @include screen-lg {
     font-size: 4.5rem;
     padding-right: 2px;
   }

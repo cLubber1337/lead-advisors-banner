@@ -1,6 +1,16 @@
+@import "@/styles/media";
+
 .header {
   position: relative;
   padding-top: 80px;
+
+  @include screen-sm {
+    padding-top: 100px;
+  }
+
+  @include screen-sm {
+    padding-top: 60px;
+  }
 }
 
 .headerInner {
@@ -11,8 +21,15 @@
 .logoLink {
   position: relative;
   z-index: var(--z-index-header-logo);
-}
+  width: 128px;
+  height: 40px;
 
+
+  @include screen-sm {
+    width: 190px;
+    height: 60px;
+  }
+}
 
 
 .cloud {
@@ -24,10 +41,43 @@
     left: -187px;
     width: 366px;
     height: 302px;
+
+    @include screen-sm {
+      top: -176px;
+      left: -228px;
+      height: 394px;
+      width: 478px;
+    }
+
+    @include screen-lg {
+      top: -396px;
+      left: -446px;
+      height: 714px;
+      width: 865px;
+    }
+
+    @include screen-xl {
+      top: -280px;
+      left: -403px;
+      height: 714px;
+      width: 865px;
+    }
   }
 
   &Right {
     right: -338px;
     top: -427px;
+
+    @include screen-sm {
+      transform: rotate(361deg);
+      right: -499px;
+      top: -448px;
+      width: 865px;
+      height: 714px;
+    }
+
+    @include screen-lg {
+      right: -466px;
+    }
   }
 }

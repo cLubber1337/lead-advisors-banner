@@ -1,6 +1,17 @@
+@import "@/styles/media";
+
 .hero {
   margin-top: 66px;
   margin-bottom: 40px;
+
+  @include screen-sm {
+    margin-top: 166px;
+  }
+
+  @include screen-lg {
+    margin-bottom: 32px;
+    margin-top: 96px;
+  }
 }
 
 .heroInner {
@@ -17,9 +28,23 @@
   line-height: 1;
   margin-bottom: 16px;
   text-align: center;
+
+  @include screen-sm {
+      margin-bottom: 20px;
+  }
+
+  @include screen-lg {
+    font-size: 4.5rem;
+    margin-bottom: 8px;
+  }
 }
 
 .subtitle {
   text-align: center;
   max-width: 286px;
+
+  @include screen-lg {
+    font-size: 1.125rem;
+    max-width: 425px;
+  }
 }

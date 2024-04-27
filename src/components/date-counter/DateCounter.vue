@@ -4,23 +4,25 @@ import DateCounterItem from '@/components/date-counter-item/DateCounterItem.vue'
 </script>
 
 <template>
-  <div class="container">
-    <article :class="styles.dateCounter">
-      <DateCounterItem date-label="dd" date-value="96" />
+  <section :class="styles.dateCounterSection">
+    <div class="container">
+      <article :class="styles.dateCounter">
+        <DateCounterItem date-label="dd" date-value="96" />
 
-      <span :class="styles.dateSeparator">:</span>
+        <span :class="styles.dateSeparator">:</span>
 
-      <DateCounterItem date-label="hh" date-value="96" />
+        <DateCounterItem date-label="hh" date-value="96" />
 
-      <span :class="styles.dateSeparator">:</span>
+        <span :class="styles.dateSeparator">:</span>
 
-      <DateCounterItem date-label="mm" date-value="96" />
+        <DateCounterItem date-label="mm" date-value="96" />
 
-      <span :class="styles.dateSeparator">:</span>
+        <span :class="styles.dateSeparator">:</span>
 
-      <DateCounterItem date-label="ss" date-value="96" />
-    </article>
-  </div>
+        <DateCounterItem date-label="ss" date-value="96" />
+      </article>
+    </div>
+  </section>
 </template>
 
 <style scoped></style>
