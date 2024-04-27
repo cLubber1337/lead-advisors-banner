@@ -43,7 +43,7 @@ const closeModal = () => {
 <template>
   <SubscriptionResultModal
     :isOpenModal
-    @closeModal="closeModal"
+    :closeModal="closeModal"
     :status="subscriptionResult.status"
   />
   <footer :class="styles.footer">

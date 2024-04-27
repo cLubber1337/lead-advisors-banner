@@ -33,6 +33,7 @@ defineProps({
     :name="name"
     :value="modelValue"
     :required="required"
+    autocomplete="off"
     @input="$emit('update:modelValue', $event.target.value)"
   />
 </template>

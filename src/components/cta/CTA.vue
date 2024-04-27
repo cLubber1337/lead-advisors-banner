@@ -9,10 +9,12 @@ import ArrowRightIcon from '@/components/icons/ArrowRightIcon.vue'
     <div class="container">
       <div :class="styles.ctaInner">
         <h2 :class="styles.title">Check our event page when you wait:</h2>
-        <UiButton btn-type="submit">
-          Go to the event
-          <ArrowRightIcon />
-        </UiButton>
+        <a href="https://google.com" target="_blank">
+          <UiButton btn-type="submit">
+            Go to the event
+            <ArrowRightIcon />
+          </UiButton>
+        </a>
       </div>
     </div>
   </section>
