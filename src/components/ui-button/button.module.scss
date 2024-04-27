@@ -1,0 +1,14 @@
+@import "@/styles/media";
+@import "@/styles/mixins";
+
+.button{
+  @include reset-button;
+  display: flex;
+  align-items: center;
+  column-gap: 34px;
+  padding: 16px 20px 16px 28px;
+  background-color: var(--color-blue-dark);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  font-size: 1.125rem;
+}

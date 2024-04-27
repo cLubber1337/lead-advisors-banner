@@ -2,6 +2,7 @@
 import Header from '@/components/header/Header.vue'
 import Hero from '@/components/hero/Hero.vue'
 import DateCounter from '@/components/date-counter/DateCounter.vue'
+import CTA from '@/components/cta/CTA.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import DateCounter from '@/components/date-counter/DateCounter.vue'
     <main>
       <Hero />
       <DateCounter />
+      <CTA />
     </main>
   </div>
 </template>
