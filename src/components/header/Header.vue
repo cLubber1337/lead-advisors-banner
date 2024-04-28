@@ -16,7 +16,7 @@ onMounted(() => {
     autoAlpha: 0,
     duration: 0.5,
     ease: 'none',
-    delay: 0.5,
+    delay: 1,
     y: -50,
     x: -50
   })
@@ -24,7 +24,7 @@ onMounted(() => {
     autoAlpha: 0,
     duration: 0.5,
     ease: 'none',
-    delay: 0.5,
+    delay: 1,
     y: -50,
     x: 50
   })
