@@ -4,6 +4,7 @@ import Hero from '@/components/hero/Hero.vue'
 import DateCounter from '@/components/date-timer/DateTimer.vue'
 import CTA from '@/components/cta/CTA.vue'
 import Footer from '@/components/footer/Footer.vue'
+import AllEventsPage from '@/components/all-events-page/AllEventsPage.vue'
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import Footer from '@/components/footer/Footer.vue'
     </main>
     <Footer />
   </div>
+  <AllEventsPage />
 </template>

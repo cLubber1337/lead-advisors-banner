@@ -1,0 +1,48 @@
+@import "@/styles/media";
+
+.header {
+  padding-top: 59px;
+
+  @include screen-sm {
+    padding-top: 46px;
+  }
+
+  @include screen-lg {
+    padding-top: 110px;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+
+  @include screen-lg {
+    margin-bottom: 40px;
+  }
+}
+
+.body {
+  margin-inline: auto;
+  margin-bottom: 50px;
+}
+
+.pageWrapper {
+  --container-width: 320px;
+  --container-padding-x: 20px;
+
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+
+  @include screen-sm {
+    --container-width: 688px;
+  }
+
+  @include screen-lg {
+    --container-width: 1700px;
+    --container-padding-x: 111px;
+  }
+}

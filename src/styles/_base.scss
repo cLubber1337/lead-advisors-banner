@@ -39,6 +39,7 @@ a {
   height: 100dvh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .main {
@@ -62,5 +63,17 @@ a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.h1 {
+  color: var(--color-blue-light);
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1;
+  text-align: center;
+
+  @include screen-lg {
+    font-size: 4.5rem;
   }
 }

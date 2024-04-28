@@ -6,7 +6,7 @@ import styles from './hero.module.scss'
   <section :class="styles.hero">
     <div class="container">
       <div :class="styles.heroInner">
-        <h1 :class="styles.title">UNDER CONSTRUCTION</h1>
+        <h1 class="h1" :class="[styles.title]">UNDER CONSTRUCTION</h1>
         <p :class="styles.subtitle">We're making lots of improvements and will be back soon</p>
       </div>
     </div>

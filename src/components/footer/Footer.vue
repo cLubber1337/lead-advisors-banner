@@ -68,5 +68,9 @@ const closeModal = () => {
         </form>
       </div>
     </div>
+    <a href="#all-events" :class="styles.moreButton">
+      Other Events
+      <ArrowRightIcon />
+    </a>
   </footer>
 </template>

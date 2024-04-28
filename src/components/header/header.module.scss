@@ -33,7 +33,7 @@
 
 
 .cloud {
-  position: fixed;
+  position: absolute;
   z-index: var(--z-index-cloud);
 
   &Left {
