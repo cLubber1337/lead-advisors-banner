@@ -20,7 +20,6 @@
 
 .logoLink {
   position: relative;
-  //z-index: var(--z-index-header-logo);
   width: 128px;
   height: 40px;
 
@@ -57,7 +56,7 @@
     }
 
     @include screen-xl {
-      top: -280px;
+      top: -300px;
       left: -403px;
       height: 714px;
       width: 865px;
@@ -65,19 +64,23 @@
   }
 
   &Right {
-    right: -338px;
-    top: -427px;
+    right: -511px;
+    top: -516px;
+    transform: rotate(361deg);
+
 
     @include screen-sm {
-      transform: rotate(361deg);
-      right: -499px;
-      top: -448px;
+      transform: rotate(350deg);
+      right: -551px;
+      top: -563px;
       width: 865px;
       height: 714px;
     }
 
     @include screen-lg {
-      right: -466px;
+      transform: rotate(357deg);
+      right: -576px;
+      top: -515px;
     }
   }
 }

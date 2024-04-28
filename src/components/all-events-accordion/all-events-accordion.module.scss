@@ -11,7 +11,7 @@
   gap: 4px;
   width: 100%;
 
-  @include screen-lg {
+  @include screen-xl {
     flex-direction: row;
   }
 }
@@ -22,23 +22,28 @@
   flex-direction: column;
 
 
-  @include screen-lg {
+  @include screen-xl {
     flex-direction: row-reverse;
   }
 }
 
 .AccordionBody {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column-reverse;
   flex-grow: 1;
   margin-bottom: 4px;
 
 
-  @include screen-lg {
+  @include screen-xl {
     margin-bottom: 0;
     margin-left: 2px;
     box-shadow: var(--shadow-border);
+  }
+
+
+  &Active {
+    display: flex;
   }
 }
 
@@ -49,14 +54,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  height: 158px;
   padding: 24px 20px 20px;
 
 
-  backdrop-filter: blur(40px);
-  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(20px);
+  background: rgba(18, 18, 18, 0.7);
 
-  @include screen-lg {
+  @include screen-xl {
     position: absolute;
     height: 100%;
     width: 36%;
@@ -75,7 +79,7 @@
   text-align: right;
   color: rgba(255, 255, 255, 0.04);
 
-  @include screen-lg {
+  @include screen-xl {
     top: -40px;
     left: -12px;
     font-size: 23.75rem;
@@ -89,7 +93,7 @@
   color: var(--color-white);
   padding-bottom: 8px;
 
-  @include screen-lg {
+  @include screen-xl {
     font-size: 1.5rem;
   }
 }
@@ -101,7 +105,7 @@
   color: var(--color-white-light);
   padding-bottom: 22px;
 
-  @include screen-lg {
+  @include screen-xl {
     font-size: 1.5rem;
   }
 }
@@ -128,7 +132,7 @@
 
   background: linear-gradient(270deg, rgba(22, 44, 78, 0), rgb(22, 44, 78) 100%);
 
-  @include screen-lg {
+  @include screen-xl {
     max-width: 82px;
     min-height: 100%;
     flex-direction: column-reverse;
@@ -147,7 +151,7 @@
   line-height: 1;
   text-align: left;
 
-  @include screen-lg {
+  @include screen-xl {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
@@ -173,7 +177,7 @@
   line-height: 1.2;
   color: var(--color-white);
 
-  @include screen-lg {
+  @include screen-xl {
     min-width: 90%;
     padding: 18px 24px;
     border-left-width: 8px;

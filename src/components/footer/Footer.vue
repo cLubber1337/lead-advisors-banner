@@ -66,11 +66,11 @@ const closeModal = () => {
             <ArrowRightIcon :class="styles.formButtonIcon" v-else />
           </UiButton>
         </form>
+        <a href="#all-events" :class="styles.moreButton">
+          Other Events
+          <ArrowRightIcon />
+        </a>
       </div>
     </div>
-    <a href="#all-events" :class="styles.moreButton">
-      Other Events
-      <ArrowRightIcon />
-    </a>
   </footer>
 </template>

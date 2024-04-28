@@ -1,7 +1,10 @@
 <script setup>
 import styles from './date-timer.module.scss'
 import DateTimerItem from '@/components/date-timer-item/DateTimerItem.vue'
-import { reactive, onMounted } from 'vue'
+import { reactive, onMounted, ref } from 'vue'
+import { gsap } from 'gsap'
+
+const timer = ref(null)
 
 const dateTimerValues = reactive({
   dd: '00',
@@ -51,11 +54,12 @@ const showRemaining = () => {
 
 onMounted(() => {
   showRemaining()
+  gsap.from(timer.value, { autoAlpha: 0, duration: 0.5, ease: 'none', delay: 1, y: -70 })
 })
 </script>
 
 <template>
-  <section :class="styles.dateCounterSection">
+  <section ref="timer" :class="styles.dateCounterSection">
     <div class="container">
       <article :class="styles.dateCounter">
         <DateTimerItem

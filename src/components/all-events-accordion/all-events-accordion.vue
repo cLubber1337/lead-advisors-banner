@@ -10,7 +10,7 @@ const activeIndex = ref(0)
   <ul :class="styles.Accordion">
     <li v-for="(event, index) in eventsData" :key="event.title" :class="styles.AccordionItem">
       <!-- BODY --->
-      <div :class="styles.AccordionBody" v-if="activeIndex === index">
+      <div :class="[styles.AccordionBody, activeIndex === index && styles.AccordionBodyActive]">
         <div :class="styles.AccordionDescription">
           <h2 :class="styles.title">{{ event.title }}</h2>
           <p :class="styles.bigNumber">0{{ index + 1 }}</p>
@@ -19,19 +19,22 @@ const activeIndex = ref(0)
             More information
           </a>
         </div>
-        <img :src="event.img" alt="" />
+        <img :class="styles.img" :src="event.img" alt="" />
       </div>
 
       <!-- TRIGGER  --->
-      <div :style="{ background: `url(${event.img}) no-repeat center/cover` }">
+      <div
+        :class="styles.AccordionTrigger"
+        :style="{ background: `url(${event.img}) no-repeat center/cover` }"
+      >
         <div :class="styles.triggerWrapper">
-          <button
+          <div
             :class="[styles.trigger, activeIndex === index && styles.triggerActive]"
             @click="activeIndex = index"
           >
             <span :class="styles.triggerNumber">0{{ index + 1 }}</span>
             <span :class="styles.triggerTitle">{{ event.title }}</span>
-          </button>
+          </div>
         </div>
       </div>
     </li>
